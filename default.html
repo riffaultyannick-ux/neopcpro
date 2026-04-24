@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Page de maintenance temporaire NéoPcPro.">
+<meta name="robots" content="noindex, nofollow">
+<title>NéoPcPro · Maintenance</title>
+<link rel="stylesheet" href="assets/css/style.css?v=33">
+<style>
+.maintenance-layout {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.maintenance-panel {
+    padding: 1.25rem;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.maintenance-panel h2 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.maintenance-panel p,
+.maintenance-list {
+    color: var(--muted);
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.maintenance-list {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.maintenance-list li + li {
+    margin-top: 0.45rem;
+}
+
+.maintenance-actions {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.maintenance-actions > * {
+    grid-column: span 6;
+}
+
+.hero,
+.hero-content,
+.top-notice-content,
+.info-card,
+.maintenance-panel,
+.site-footer {
+    min-width: 0;
+}
+
+#page-title {
+    max-width: none;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.badge,
+.subtitle,
+.top-notice-text,
+.info-card p,
+.maintenance-panel p,
+.maintenance-list,
+.footer-note {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+@media (max-width: 991.98px) {
+    .maintenance-actions > * {
+        grid-column: span 12;
+    }
+}
+</style>
+</head>
+<body>
+<div class="background-layer" aria-hidden="true"></div>
+
+<main class="page">
+<section class="hero" aria-labelledby="page-title">
+<div class="hero-content maintenance-layout">
+<section class="top-notice is-warning" aria-label="Information importante">
+<div class="top-notice-content">
+<strong class="top-notice-title">Interruption temporaire</strong>
+<p class="top-notice-text">Le site NéoPcPro est actuellement inaccessible pour maintenance.</p>
+</div>
+</section>
+
+<span class="badge" aria-hidden="true">⚠️ Site temporairement indisponible</span>
+
+<div>
+<h1 id="page-title">Une intervention technique est en cours</h1>
+<p class="subtitle">Nous effectuons actuellement une opération de maintenance afin d’améliorer le service. Merci de réessayer un peu plus tard.</p>
+</div>
+
+<div class="info-box">
+<article class="info-card">
+<h2>État du site</h2>
+<p>L’accès à cette page et aux services associés est momentanément suspendu pendant l’intervention.</p>
+</article>
+<article class="info-card">
+<h2>Pourquoi cette page ?</h2>
+<p>Cette indisponibilité temporaire permet d’appliquer des mises à jour, des correctifs ou des ajustements de configuration en toute sécurité.</p>
+</article>
+<article class="info-card">
+<h2>Que faire ?</h2>
+<p>Aucune action n’est nécessaire de votre côté. Il suffit de revenir un peu plus tard et de recharger la page.</p>
+</article>
+</div>
+
+<div class="maintenance-actions">
+<section class="maintenance-panel">
+<h2>Message affiché aux visiteurs</h2>
+<p>Le site est temporairement inaccessible. Merci de votre compréhension.</p>
+</section>
+<section class="maintenance-panel">
+<h2>Conseils</h2>
+<ul class="maintenance-list">
+<li>Fermez simplement cette page puis réessayez ultérieurement.</li>
+<li>Actualisez votre navigateur lorsque le service sera rétabli.</li>
+<li>Conservez cette page comme page par défaut pendant la maintenance.</li>
+</ul>
+</section>
+</div>
+
+<footer class="site-footer">
+<p class="footer-note">NéoPcPro · Page de maintenance temporaire</p>
+</footer>
+</div>
+</section>
+</main>
+</body>
+</html>
